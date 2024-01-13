@@ -6,3 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = "Real Project Admin"
+admin.site.site_title = "Real Project Admin Portal"
+admin.site.index_title = "Welcome to Real Project Portal"
